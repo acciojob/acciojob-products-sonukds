@@ -1,1 +1,41 @@
 /*  your css code here. If applicable */
+#wrapper{
+	display: flex;
+	justify-content: center;
+}
+.product{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: white;
+	font-weight: 600;
+	margin:  25px;
+	
+}
+#dsa{
+	text-align: center;
+	width: 50%;
+	background-color: #8a0123;
+	margin-left: 10px;
+}
+#mern{
+	background-color: #f27f1b;
+	width: 30%;
+	height: 75px;
+}
+#acciojob{
+	background-color: #626fe3;
+	width: 75%;
+		
+}
+#buisness-analytics{
+	width: 40%;
+	margin-top: 10px;
+	background-color: #12967e;
+}
+#spring{
+	width: 50%;
+	background-color: #f21b3f;
+}
+
+
