@@ -1,41 +1,53 @@
-/*  your css code here. If applicable */
-#wrapper{
-	display: flex;
-	justify-content: center;
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Vertical spacing between rows */
 }
-.product{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	color: white;
-	font-weight: 600;
-	margin:  25px;
-	
-}
-#dsa{
-	text-align: center;
-	width: 50%;
+
+.product#dsa {
+    width: 50%; /* DSA width */
+    position: absolute;
 	background-color: #8a0123;
-	margin-left: 10px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center DSA */
 }
-#mern{
+
+.product#mern {
+    width: 30%; 
+    height: 75px; 
 	background-color: #f27f1b;
-	width: 30%;
-	height: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
-#acciojob{
+
+/* Second row */
+.row.second {
+    display: flex;
+    justify-content: center;
+}
+
+.product#acciojob {
+    width: 75%; 
 	background-color: #626fe3;
-	width: 75%;
-		
 }
-#buisness-analytics{
-	width: 40%;
-	margin-top: 10px;
+
+/* Third row */
+.row.third {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.product#buisness-analytics {
+    width: 40%; 
 	background-color: #12967e;
 }
-#spring{
-	width: 50%;
+
+.product#spring {
+    flex-grow: 1;  
+    height: 75px; 
+    margin-left: 10px; 
 	background-color: #f21b3f;
 }
-
-
